@@ -28,7 +28,14 @@ import chartsUI3 from "../images/chartsUI/webmakers-chart-3.png";
 import chartsUI4 from "../images/chartsUI/webmakers-chart-4.png";
 import chartsUI5 from "../images/chartsUI/webmakers-chart-5.png";
 
-const ShowCase = ({ itemNumber = 0 }: { itemNumber: 0 | 1 | 2 | 3 | 4 }) => {
+import paradiseBarbershopHome from '../images/paradise-barbershop/home.png';
+import paradiseBarbershopService from '../images/paradise-barbershop/services.png';
+
+const ShowCase = ({
+  itemNumber = 0,
+}: {
+  itemNumber: 0 | 1 | 2 | 3 | 4 | 5;
+}) => {
   const SHOWCASES = [
     {
       title: "Webmakers Studio",
@@ -81,6 +88,12 @@ const ShowCase = ({ itemNumber = 0 }: { itemNumber: 0 | 1 | 2 | 3 | 4 }) => {
       description:
         "Developed a comprehensive charting library that empowers developers to create stunning, interactive data visualizations with minimal code, streamlining web application development.",
     },
+    {
+      title: "Paradise Barbershop",
+      images: [paradiseBarbershopHome, paradiseBarbershopService],
+      website: 'https://www.paradisebarbershop.ca/',
+      description: 'Website for barber to schedule client booking to come for a haircut and hair related services.'
+    }
   ];
   const title = SHOWCASES[itemNumber].title;
   const description = SHOWCASES[itemNumber].description;
@@ -88,8 +101,8 @@ const ShowCase = ({ itemNumber = 0 }: { itemNumber: 0 | 1 | 2 | 3 | 4 }) => {
   const link = SHOWCASES[itemNumber].website;
 
   return (
-    <div>
-      <div className="flex  w-full justify-between">
+    <div className="mb-16">
+      <div className="flex w-full justify-between">
         <h3 className="text-4xl font-bold">{title}</h3>
         <a
           className="bg-black text-white border px-4 py-2 font-semibold"

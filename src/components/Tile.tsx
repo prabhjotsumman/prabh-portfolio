@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router";
 
 const Tile = ({
@@ -13,7 +12,7 @@ const Tile = ({
   show: string
 }) => {
   return (
-    <div className="border  w-full px-2 sm:px-8 py-8 drop-shadow-md my-8">
+    <div className="border w-full px-2 sm:px-8 py-8 drop-shadow-md my-8 hover:border-black hover:border-2">
       <div className="flex flex-col sm:flex-row">
         <img alt="showcase" src={image} className="w-full sm:w-6/12"></img>
         <div className="px-4 sm:px-8 w-full sm:w-6/12">

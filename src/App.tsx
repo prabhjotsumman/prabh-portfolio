@@ -18,6 +18,7 @@ function App() {
           <Route path="/show2" element={<ShowCase itemNumber={2} />} />
           <Route path="/show3" element={<ShowCase itemNumber={3} />} />
           <Route path="/show4" element={<ShowCase itemNumber={4} />} />
+          <Route path="/show5" element={<ShowCase itemNumber={5} />} />
         </Routes>
       </BrowserRouter>
     </div>
@@ -25,5 +26,3 @@ function App() {
 }
 
 export default App;
-
-// <ShowCase title="Webmakers Studio" description="We help ambitious founders turn ideas into working products, fast. Our streamlined design and development process gets your startup from concept to launch in 2 to 4 weeks."/>

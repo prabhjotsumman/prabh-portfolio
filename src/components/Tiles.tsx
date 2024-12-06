@@ -4,10 +4,19 @@ import Thumb2 from "../images/show-thumb/thumb2.png";
 import Thumb3 from "../images/show-thumb/thumb3.png";
 import Thumb4 from "../images/show-thumb/thumb4.avif";
 import Thumb5 from "../images/show-thumb/thumb5.png";
+import Thumb6 from "../images/show-thumb/thumb6.png";
 
 const Tiles = () => {
   return (
     <div className="mt-10">
+      <Tile
+        image={Thumb6}
+        title={"Paradise Barbershop"}
+        show="show5"
+        description={
+          "Website for barber to schedule client booking to come for a haircut and hair related services."
+        }
+      />
       <Tile
         image={Thumb1}
         title={"Webmakers Studio"}
